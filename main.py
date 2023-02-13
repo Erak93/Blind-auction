@@ -23,7 +23,7 @@ while auction_is_over==False:
     bid=int(input("Bid: $"))
     bidders[name]=bid
     #print(bidders)
-    next_bidder=input("Are there any other bidders? Y/N:  ")
+    next_bidder=input("Are there any other bidders? Y/N:  ").upper()
     if next_bidder=="N":
         auction_is_over=True
         os.system('clear')
